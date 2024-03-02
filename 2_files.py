@@ -28,7 +28,7 @@ def remove_prepositions(file):
     words = []
     prepositions = PREPOSITIONS
     for word in splited_file:
-        if word not in prepositions:
+        if word.lower() not in prepositions:
             words.append(word)
     return words
 
